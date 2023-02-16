@@ -268,4 +268,31 @@ return [
             "url"=> '#',
         ]
         ],
+        'iconBlue'=> [
+            [
+
+                "img" => 'resources/img/buy-comics-digital-comics.png',
+                "description" => 'DIGITAL COMICS'
+            ],
+            [
+
+                "img" => 'resources/img/buy-comics-merchandise.png',
+                "description" => 'DC MERCHANDISE'
+            ],
+            [
+
+                "img" => 'resources/img/buy-comics-subscriptions.png',
+                "description" => 'SUBSCRIPTION'
+            ],
+            [
+
+                "img" => 'resources/img/buy-comics-shop-locator.png',
+                "description" => 'COMIC SHOP LOCATOR'
+            ],
+            [
+
+                "img" => 'resources/img/buy-dc-power-visa.svg',
+                "description" => 'DC POWER VISA'
+            ],
+        ],
 ];

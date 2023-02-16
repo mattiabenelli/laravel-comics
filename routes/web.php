@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $navmenu = config('comics.menu');
     $comics = config('comics.fumetti');
+    $itemBlueSection = config('comics.iconBlue');
     
-    return view('home', compact('navmenu','comics'));
+    return view('home', compact('navmenu', 'comics', 'itemBlueSection'));
 });
