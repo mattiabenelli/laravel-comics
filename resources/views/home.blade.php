@@ -8,14 +8,8 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        @include("partials.header")
-    </header>
-    <main>
-        @include("partials.main")
-    </main>
-    <footer>
-        @include("partials.footer")
-    </footer>
+    @include("partials.header")
+    @include("partials.main")
+    @include("partials.footer")
 </body>
 </html>
