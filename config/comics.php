@@ -216,58 +216,6 @@ return [
             ],
         ]
         ],
-    
-    'menu' => [
-        [
-            "label"=> 'Characters',
-            "url"=> '#',
-        ],
-        [
-
-            "label"=> 'Comics',
-            "url"=> '#',
-        ],
-        [
-
-            "label"=> 'Movies',
-            "url"=> '#',
-        ],
-        [
-
-            "label"=> 'Tv',
-            "url"=> '#',
-        ],
-        [
-
-            "label"=> 'Games',
-            "url"=> '#',
-        ],
-        [
-
-            "label"=> 'Collectibles',
-            "url"=> '#',
-        ],
-        [
-
-            "label"=> 'Videos',
-            "url"=> '#',
-        ],
-        [
-
-            "label"=> 'Fans',
-            "url"=> '#',
-        ],
-        [
-
-            "label"=> 'News',
-            "url"=> '#',
-        ],
-        [
-
-            "label"=> 'Shop',
-            "url"=> '#',
-        ]
-        ],
         'iconBlue'=> [
             [
 

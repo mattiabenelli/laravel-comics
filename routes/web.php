@@ -14,9 +14,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $navmenu = config('comics.menu');
+    
+    return view('home');
+})->name('homepage');
+
+
+Route::get('/prodotti', function() {
     $comics = config('comics.fumetti');
     $itemBlueSection = config('comics.iconBlue');
     
-    return view('home', compact('navmenu', 'comics', 'itemBlueSection'));
-});
+    return view('products', compact('comics', 'itemBlueSection'));
+})->name('products');
