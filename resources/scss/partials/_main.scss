@@ -5,6 +5,12 @@
     @include borderPage;
 }
 
+.blue-container {
+    @include flex-align;
+    @include borderPage;
+    justify-content: space-between;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -21,4 +27,24 @@ main {
 .card {
     width: calc(100% / 6 - 40px);
     text-align: center;
+}
+
+.blue-section {
+    background-color: $DCblue;
+    padding: 40px 0;
+    position: relative;
+    z-index: 1;
+
+    .blue-section-links {
+        @include flex-align;
+        color: white;
+
+        img {
+            height: 100px;
+        }
+    }
+
+    .blue-section-links-text {
+        padding-left: 10px;
+    }
 }

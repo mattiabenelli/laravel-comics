@@ -1,15 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    @vite('resources/js/app.js')
-    <title>Document</title>
-</head>
-<body>
-    @include("partials.header")
-    @include("partials.main")
-    @include("partials.footer")
-</body>
-</html>
+@extends('layouts.app')
+
+@section('content')
+    <div class="main-container">
+        <div class="row">
+        @foreach ($comics as $comic)
+            <div class="card">
+                <div class="card-image">
+                    <img src="{{$comic['thumb']}}" alt="">
+                </div>
+                <div class="card-name">{{$comic['title']}}</div>
+            </div>
+        @endforeach
+        </div>
+    </div>
+    <div class="blue-section">
+        <div class="blue-container">
+          @foreach ($itemBlueSection as $item)
+            <div class="blue-section-links">
+                <img src="{{ asset(Vite::asset($item['img'])) }}" alt="">
+                <div class="blue-section-links-text">{{$item['description']}}</div>
+            </div>
+          @endforeach
+        </div>
+    </div>
+@endsection

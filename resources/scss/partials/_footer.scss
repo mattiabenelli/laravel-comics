@@ -98,24 +98,4 @@ footer {
             }
         }
     }
-
-    .blue-section {
-        background-color: $DCblue;
-        padding: 40px 0;
-        position: relative;
-        z-index: 1;
-
-        .blue-section-links {
-            @include flex-align;
-            color: white;
-
-            img {
-                height: 100px;
-            }
-        }
-
-        .blue-section-links-text {
-            padding-left: 10px;
-        }
-    }
 }
