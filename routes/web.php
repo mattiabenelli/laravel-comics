@@ -25,3 +25,18 @@ Route::get('/prodotti', function() {
     
     return view('products', compact('comics', 'itemBlueSection'));
 })->name('products');
+
+
+Route::get('/prodotti/{id}', function($id){
+    $comics = config('comics.fumetti');
+    
+    $item = '';
+    foreach($comics as $key => $comic){
+        if($id == $key){
+            $item = $comic;
+        }
+    }
+
+    return view('detail_comics', compact('comics', 'item'));
+
+})->name('detail-comics');
