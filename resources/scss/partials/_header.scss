@@ -6,6 +6,13 @@ header {
     position: relative;
     z-index: 2;
 
+    .jumbo-header {
+        background-image: url('/resources/img/jumbotron.jpg');
+        background-size: cover;
+        height: 400px;
+        width: 100%;
+    }
+
     nav {
         display: flex;
         justify-content: flex-end;
